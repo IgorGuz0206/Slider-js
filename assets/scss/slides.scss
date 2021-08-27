@@ -1,0 +1,44 @@
+.slides {
+  position: relative;
+  height: 600px;
+  width: 70%;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.25s;
+  font-size: 40px;
+  padding: 40px;
+  color: white;
+  left: 0px;
+  top: 0px;
+  background-position: center;
+  background-size: cover;
+  @mixin sm {
+    padding: 20px;
+  }
+  &__text {
+  font-family: cursive;
+  @mixin lg-md {
+    font-size: 1.5em;
+  }
+  @mixin md-sm {
+    font-size: 1.25em;
+  }
+  @mixin sm-xs {
+    font-size: 1em;
+  }
+  @mixin xs {
+    font-size: 0.7em;
+  }
+  }
+}
+.active {
+  opacity: 1;
+  z-index: 1;
+}

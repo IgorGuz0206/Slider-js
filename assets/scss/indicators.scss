@@ -1,0 +1,26 @@
+.indicators {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  padding: 1em;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  @mixin xs {
+    gap: 0;
+  }
+}
+.indicator {
+  width: 20px;
+  height: 20px;
+  margin: -40px 7.5px 0;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+.indicator.active {
+  border-color: white;
+  box-shadow: 0 0 10px white;
+}
